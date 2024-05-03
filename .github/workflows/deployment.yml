@@ -1,8 +1,5 @@
 name: Deploy project
-on: 
-  pull_requests:
-    types:
-      - opened
+on: [push, workflow_dispatch]
 jobs:
   test:
     runs-on: ubuntu-latest
