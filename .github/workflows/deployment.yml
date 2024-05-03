@@ -1,8 +1,11 @@
 name: Deploy project
 on: 
-  pull_requests:
+  pull_request:
     types:
       - opened
+  push:
+    branches:
+      - master
 jobs:
   test:
     runs-on: ubuntu-latest
