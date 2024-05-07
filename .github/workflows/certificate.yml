@@ -1,8 +1,0 @@
-name: Workflow run with one event
-on: [push, workflow_dispatch]
-jobs:
-	test:
-		runs-on: ubuntu-latest
-		steps:
-			- name: print hello
-				run: echo "Hello world"
